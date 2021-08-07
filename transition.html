@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title> CSS transform and transition</title>
+<style>
+div.demo{
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scale(2,3); /* IE 9 */
+  transform: scale(2,3); /* Standard syntax */
+}
+
+div:hover{
+  cursor: pointer;
+  transition: all 2s linear;
+  transform: scale(2);
+  -ms-transform: scale(5); /* IE 9 */
+}
+</style>
+</head>
+<body>
+
+<div class="demo">
+    This div element use By class in transition and transform .
+</div>
+
+</body>
+</html>
